@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 import {notification} from './assets/notification.svg'
@@ -9,13 +10,13 @@ import {arrow} from './assets/arrow.svg'
 
 const Navbar = () => {
   return (
-    <div className="bg-[#15132B] w-full h-[12vh] flex items-center justify-evenly px-4">
-      <div className="bg-[#211A75] rounded-full flex items-center px-2 py-4 md:w-[25vw] w-[5vw]">
+    <div className="bg-[#15132B] md:w-[85vw] w-[100vw] h-[12vh] flex items-center justify-evenly px-4">
+      <div className="bg-[#211A75] rounded-full flex items-center px-2 py-4 md:w-[25vw] w-[15vw]">
         <FaSearch className="h-5 w-5 text-[#7879F1] md:ml-4 ml-3 mr-3" />
         <input
           type="text"
           placeholder="Search here"
-          className="bg-[#211A75] md:block hidden text-[13px] text-[#AAAAAA] outline-none placeholder-[#AAAAAA] w-24 sm:w-32 md:w-40"
+          className="bg-[#211A75] md:block hidden text-[13px] text-[#AAAAAA] outline-none placeholder-[#AAAAAA] w-40"
         />
       </div>
       <div className="md:block hidden md:flex items-center justify-evenly space-x-5">

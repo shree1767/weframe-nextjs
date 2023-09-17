@@ -3,19 +3,22 @@ import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
 
 export const metadata = {
-    title: "weframe",
-    descripton:"Assignement task for internship"
+  title: "weframe",
+  description: "Assignment task for internship"
 }
-const RootLayout = ({children}) => {
+
+const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-        <body>
-           <Navbar/>
-           <Sidebar/>
-           <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+      <body className="flex">
+        <Sidebar />
+        <div className="flex flex-col">
+          <Navbar />
+          <main className="flex-1 overflow-x-hidden overflow-y-auto">
             {children}
-           </main>
-        </body>
+          </main>
+        </div>
+      </body>
     </html>
   )
 }
