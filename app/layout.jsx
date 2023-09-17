@@ -12,7 +12,7 @@ const RootLayout = ({children}) => {
         <body>
            <Navbar/>
            <Sidebar/>
-           <main className='app'>
+           <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
             {children}
            </main>
         </body>
