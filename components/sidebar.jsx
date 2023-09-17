@@ -1,6 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import sidebarimg from './assets/sidebarimg.svg'
+import dashboard from './assets/dashboard 1.svg'
+import email from './assets/email 1.svg'
+import chat from './assets/comment 1.svg'
+import kanban from './assets/thumbnail 1.svg'
+import contact from './assets/contact 1.svg'
+import calender from './assets/calendar-silhouette 1.svg'
+import courses from './assets/invoice 1.svg'
+import shop from './assets/online-shopping 1.svg'
+import invoices from './assets/invoice 1.svg'
+import setting from './assets/setting 1.svg'
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -15,7 +25,7 @@ const Sidebar = () => {
   
 
   return (
-    <div className="h-screen w-[17vw] flex overflow-hidden">
+    <div className="h-screen w-[17vw] flex overflow-hidden ">
       {/* Mobile Hamburger Icon */}
       <div className="">
         <button
@@ -24,13 +34,13 @@ const Sidebar = () => {
           style={{ display: isOpen ? "block" : "none" }}
         ></button>
         <div
-          className="fixed inset-y-0 left-0 w-64 z-30 flex-shrink-0 bg-[#15132B] shadow-lg"
+          className="fixed shadow-xl inset-y-0 left-0 w-64 z-30 flex-shrink-0 h-full bg-[#15132B] shadow-lg"
           style={{ transform: isOpen ? "translateX(0)" : "translateX(-100%)" }}
         >
           {/* Sidebar Content */}
           <div className="mt-3 flex items-center justify-center h-16 bg-[#15132B] text-white">
             <div className="flex  space-x-[4vw]">
-              <span className="mr-2">weframetech</span>
+              <span className="ml-5">weframetech</span>
               <button
                 onClick={toggleSidebar}
                 className="md:block text-white hover:text-gray-300 focus:outline-none"
@@ -51,73 +61,84 @@ const Sidebar = () => {
               </button>
             </div>
           </div>
-          <div className="mt-6 ml-6">
-            <p className="text-[#C7C7C7] text-[13px]">MAIN MENU</p>
+          <div className="mt-4 ml-9">
+            <p className="text-[#C7C7C7] text-[13px] font-semibold">MAIN MENU</p>
           </div>
-          <nav className="mt-3 ml-3">
+          <nav className="my-3 ml-5 ">
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#464366]"
+              className="flex font-light space-x-5 block pt-2 py-3.5 pl-4 pr-6 text-sm font-medium text-[#464366]"
             >
-              Dashboard
+              <img src={dashboard} className="w-5 h-5"/>
+              <div>Dashboard</div>
+              
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#464366]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#464366]"
             >
-              Email
+              <img src={email} className="w-5 h-5"/>
+              <div>Email</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Chat
+              <img src={chat} className="w-5 h-5"/>
+              <div>Chat</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#6418C3]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#6418C3]"
             >
-              Kanban
+              <img src={kanban} className="w-5 h-5"/>
+              <div>Kanban</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Contact
+              <img src={contact} className="w-5 h-5"/>
+              <div>Contact</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Calender
+              <img src={calender} className="w-5 h-5"/>
+              <div>Calender</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Courses
+              <img src={courses} className="w-5 h-5"/>
+              <div>Courses</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Shop
+              <img src={shop} className="w-5 h-5"/>
+              <div>Shop</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Invoices
+              <img src={invoices} className="w-5 h-5"/>
+              <div>Invoices</div>
             </a>
             <a
               href="#"
-              className="block py-3 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
+              className="flex font-light space-x-5 block pt-3.5 pl-4 pr-6 text-sm font-medium text-[#7879F1]"
             >
-              Settings
+              <img src={setting} className="w-5 h-5"/>
+              <div>Settings</div>
             </a>
           </nav>
-          <div>
-            <img src={sidebarimg}/>
+          <div className="p-10">
+            <img src={sidebarimg} />
           </div>
         </div>
       </div>
