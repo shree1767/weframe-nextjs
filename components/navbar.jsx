@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#15132B] md:w-[83vw] w-[100vw] h-[12vh] flex items-center pl-12 shadow-xl">
-      <div className="bg-[#211A75] rounded-full flex space-x-3 items-center px-2 py-4 md:w-[24vw] w-[15vw]">
+      <div className="bg-[#211A75] rounded-full flex space-x-3 items-center px-2 py-4 md:w-[28vw] w-[15vw]">
         <FaSearch className="h-5 w-5 text-[#7879F1] md:ml-4 mx-2" />
         <input
           type="text"
@@ -21,16 +21,16 @@ const Navbar = () => {
         />
       </div>
       <div className="md:block hidden md:flex items-center justify-between ml-10 ">
-        <a href="#" className="text-[#6418C3] mr-5 text-[11px] underline">
+        <a href="#" className="text-[#6418C3] font-bold  text-[11px] underline">
           OTHER MENUS
         </a>
-        <div className="flex">
-          <img src={notification} className="w-[4vw]" />
-          <img src={activities} className="w-[4vw]"/>
-          <img src={check} className="w-[4vw]" />
-          <img src={folder}  className="w-[4vw]"/>
+        <div className="flex -space-x-5 ml-3">
+          <img src={notification} className="w-[5vw]" />
+          <img src={activities} className="w-[5vw]"/>
+          <img src={check} className="w-[5vw]" />
+          <img src={folder}  className="w-[5vw]"/>
         </div>
-        <button className="md:block hidden ml-5 mr-5 items-center text-white md:flex space-x-3 bg-[#211A75] py-4 px-3  font-semibold rounded-full text-sm">
+        <button className="md:block hidden mr-5 items-center text-white md:flex space-x-3 bg-[#211A75] py-4 px-3  font-semibold rounded-full text-[13px]">
           <div>
             <img src={us} />
           </div>

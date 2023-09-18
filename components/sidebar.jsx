@@ -14,7 +14,8 @@ import setting from './assets/setting 1.svg'
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
-  
+  const isKanbanPage = true; 
+
   // Function to toggle the sidebar
   const toggleSidebar = () => {
     if (window.innerWidth <= 425) {
@@ -89,10 +90,15 @@ const Sidebar = () => {
             </a>
             <a
               href="#"
-              className="flex font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#6418C3]"
+              className="flex items-center font-light space-x-5 block py-3.5 pl-4 pr-6 text-sm font-medium text-[#6418C3]"
             >
               <img src={kanban} className="w-5 h-5"/>
               <div>Kanban</div>
+              {isKanbanPage && (
+                <div
+                  className="w-1 h-10 absolute right-0 bg-[#6418C3] rounded"
+                ></div>
+              )}
             </a>
             <a
               href="#"
