@@ -1,8 +1,12 @@
+import Todolist from '../components/Todolist'
+import InProgress from '../components/InProgress'
+import Done from '../components/Done'
+
 const Home = () => {
   return (
-    <div className="bg-[#0D0B21] px-5 py-8 md:w-[83vw] w-[100vw] h-full">
+    <div className="bg-[#0D0B21] px-5 py-8 md:w-[83vw] w-[100vw] h-[100vh]">
       <div className="bg-[#15132B] flex justify-between md:mx-8 px-4 md:w-[77vw] md:h-[20vh] bg-opacity-80 rounded-2xl">
-        <div className="flex space-x-3 py-7 md:px-8">
+        <div className="flex space-x-3 py-7 md:px-2">
           <div>
             <img src="/btnback.svg" alt="." className="md:block hidden " />
           </div>
@@ -50,6 +54,36 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* kanban */}
+      <div className="lg:grid lg:grid-cols-4 md:mx-10 px-4 md:w-[80vw] md:h-[20vh] mt-10">
+          <div>
+            <div className="flex items-center space-x-20 text-white">
+              <p>To-Do List(24) </p>
+              <img src="/btnAdd.svg" className="w-[45px]"/>
+            </div>
+            <Todolist/>
+          </div>
+          <div>
+            <div className="flex items-center space-x-20 text-white">
+              <p>In-Progress(2) </p>
+              <img src="/btnAdd (1).svg" className="w-[35px]"/>
+            </div>
+            <InProgress/>
+          </div>
+          <div>
+            <div className="flex items-center space-x-20 text-white">
+              <p>Done(3) </p>
+              <img src="/btnAdd (1).svg" className="w-[35px]"/>
+            </div>
+            <Done/>
+          </div>
+          <div>
+            <div className="flex items-center space-x-20 text-white">
+              <p>Revised(0) </p>
+              <img src="/btnAdd (1).svg" className="w-[35px]"/>
+            </div>
+          </div>
       </div>
     </div>
   );
