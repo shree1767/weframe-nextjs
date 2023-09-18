@@ -7,7 +7,7 @@ import duedate from './assets/duedate.svg'
 const InProgress = () => {
   return (
     <div>
-        <div className='bg-[#211A75] px-5 rounded-lg md:w-[16vw] mt-3 py-3'>
+        <div className='bg-[#211A75] px-5 rounded-lg md:w-[16vw] mt-5 py-3'>
             <div className='flex justify-between items-center'>
                 <p className='text-[#5ECFFF] text-sm'>Video</p>
                 <img src={icvert} alt='k'/>
